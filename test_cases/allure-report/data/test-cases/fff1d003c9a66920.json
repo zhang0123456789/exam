@@ -1,0 +1,58 @@
+{
+  "uid" : "fff1d003c9a66920",
+  "name" : "test_001[param1-Result1]",
+  "fullName" : "test_login.TestLogin#test_001",
+  "historyId" : "350acc2b0ef808981b1f8ef27e64b393",
+  "time" : {
+    "start" : 1629759878283,
+    "stop" : 1629759878587,
+    "duration" : 304
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-RSL7RLFI"
+  }, {
+    "name" : "thread",
+    "value" : "9468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Result",
+    "value" : "{'code': 400, 'message': '用户名不存在'}"
+  }, {
+    "name" : "param",
+    "value" : "{'username': '', 'password': '123456'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fff1d003c9a66920.json",
+  "parameterValues" : [ "{'code': 400, 'message': '用户名不存在'}", "{'username': '', 'password': '123456'}" ]
+}
