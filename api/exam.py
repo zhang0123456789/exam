@@ -17,7 +17,7 @@ class Exam(Request):
                "X-AUTH-TOKEN": token}
 
 
-    #  »ñÈ¡ËùÓÐÊÔ¾íÁÐ±í
+    #  ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ô¾ï¿½ï¿½Ð±ï¿½
     def get_exam(self):
         url='http://121.41.14.39:9097/api/exams/1/6'
         resp=self.get_json(url,request_type=RequestType.get)
