@@ -13,7 +13,7 @@ def get_md5(pwd):
     return m.hexdigest()  # 用十六进制输出加密后的数据
 
 
-class Login:
+class Login(Request):
     url = base_url + 'api/loginS'
 
     def login(self, data: object, mode: object) -> object:
@@ -36,8 +36,8 @@ class Login:
         files--文件上传接口
         params--参数会放到url路径里？ a=1&b=2
         """
-        resp_1=Request().get_response(self.url,payload,test_headers=None,request_type='post',expect_return_code=200)
-        resp=Request().get_json(self.url,payload)
+        resp_1=self.get_response(self.url,payload,test_headers=None,request_type='post',expect_return_code=200)
+        resp=self.get_json(self.url,payload)
         if mode:#获取token
             return resp["token"]
         else: #获取响应数据
